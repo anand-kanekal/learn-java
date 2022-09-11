@@ -5,8 +5,10 @@ import java.util.regex.Pattern;
 
 public class PatternCaseInsensitiveMatches {
 
+    private static final String REGEX = "geeks";
+
     public static void main(String[] args) {
-        Pattern pattern = Pattern.compile("geeks", Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile(REGEX, Pattern.CASE_INSENSITIVE);
         Matcher match = pattern.matcher("GEEKSforgeeks");
 
         while (match.find()) {

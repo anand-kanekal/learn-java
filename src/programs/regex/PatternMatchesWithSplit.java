@@ -5,9 +5,10 @@ import java.util.regex.Pattern;
 
 public class PatternMatchesWithSplit {
 
+    private static final String REGEX = "\\d";
+
     public static void main(String[] args) {
-        String delimiter = "\\d";
-        Pattern pattern = Pattern.compile(delimiter, Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile(REGEX, Pattern.CASE_INSENSITIVE);
         String[] matches = pattern.split("geeks1for2geeks3");
 
         for(String match : matches) {
